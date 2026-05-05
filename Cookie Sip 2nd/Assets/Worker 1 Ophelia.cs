@@ -7,11 +7,9 @@ public class worker1Ophelia : MonoBehaviour
     public Transform centrePoint;
     public Transform frontPoint;
     public Transform leftPoint;
-    public Transform closerleftPoint;
-    public Transform farleftPoint;
-    public Transform rightPoint;
-    public Transform farrightPoint;
-    public Transform closerrightPoint;
+   
+        public Transform rightPoint;
+    
 
 
     [Header("Speed")]
@@ -26,12 +24,13 @@ public class worker1Ophelia : MonoBehaviour
     centrePoint.position,
      frontPoint.position,
      centrePoint.position,
-     farleftPoint.position,
+     
     leftPoint.position,
-     closerleftPoint.position,
-     farrightPoint.position,
+     
+     centrePoint.position,
+     
      rightPoint.position,
-     closerrightPoint.position,
+     
         };
 
         transform.position = path[0];
