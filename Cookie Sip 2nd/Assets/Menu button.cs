@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class MenuButton : MonoBehaviour
+public class MenuButton: MonoBehaviour
 {
     public void ClickButton()
 {
-    SceneManager.LoadScene("SampleScene");//if player clicks menu butto then it is going to lead them to the mentioned
+    SceneManager.LoadScene("Menu scene");//if player clicks menu butto then it is going to lead them to the mentioned
 
 }
 }
