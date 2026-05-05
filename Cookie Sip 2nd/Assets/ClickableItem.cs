@@ -1,10 +1,6 @@
 using UnityEngine;
 
-public enum ClickItemType
-{
-    Pastry,
-    Drink
-}
+public enum ClickItemType {Pastry, Drink}
 
 public class ClickableItem : MonoBehaviour
 {
@@ -16,6 +12,7 @@ public class ClickableItem : MonoBehaviour
     public void Click(Orderlist orderlist)
     {
         if (orderlist == null) return;
+        
         if (type == ClickItemType.Drink)
             orderlist.ShowOrder(itemName, "");
         else

@@ -19,14 +19,14 @@ public class Orderlist : MonoBehaviour
     [SerializeField] private Transform drinkTillSlot;
 
     [Header("Pastries")]
-    [SerializeField] private Objectshake cookie;
+    [SerializeField] private Objectshake donut;
     [SerializeField] private Objectshake muffin;
     [SerializeField] private Objectshake croissant;
 
     [Header("Drinks")]
     [SerializeField] private Objectshake coffee;
     [SerializeField] private Objectshake chaiLatte;
-    [SerializeField] private Objectshake cappacino;
+    [SerializeField] private Objectshake cappucino;
 
     private class HomeState
     {
@@ -100,7 +100,7 @@ public class Orderlist : MonoBehaviour
 
         if (drink == "coffee") return coffee;
         if (drink == "chai latte") return chaiLatte;
-        if (drink == "cappacino") return cappacino;
+        if (drink == "cappucino") return cappucino;
 
         return null;
     }
@@ -112,7 +112,7 @@ public class Orderlist : MonoBehaviour
 
         if (pastries == "croissant") return croissant;
         if (pastries == "muffin") return muffin;
-        if (pastries == "cookie") return cookie;
+        if (pastries == "donut") return donut;
 
         return null;
     }
@@ -131,9 +131,9 @@ public class Orderlist : MonoBehaviour
 
         coffee?.ResetObject();
         chaiLatte?.ResetObject();
-        cappacino?.ResetObject();
+        cappucino?.ResetObject();
         croissant?.ResetObject();
         muffin?.ResetObject();
-        cookie?.ResetObject();
+        donut?.ResetObject();
     }    
 }
