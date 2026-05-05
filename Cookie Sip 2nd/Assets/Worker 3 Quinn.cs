@@ -7,11 +7,9 @@ public class worker3Quinn: MonoBehaviour
     public Transform centrePoint;
     public Transform frontPoint;
     public Transform leftPoint;
-    public Transform closerleftPoint;
-    public Transform farleftPoint;
+    
     public Transform rightPoint;
-    public Transform farrightPoint;
-    public Transform closerrightPoint;
+    
 
     [Header("Speed")]
     public float moveSpeed = 2f;
@@ -23,14 +21,11 @@ public class worker3Quinn: MonoBehaviour
      {//worker starts at the centre point
    centrePoint.position,
      frontPoint.position,
-     centrePoint.position,
-     farleftPoint.position,
+    
     leftPoint.position,
-     closerleftPoint.position,
-     centrePoint.position,
-     farrightPoint.position,
+     
      rightPoint.position,
-     closerrightPoint.position,
+     
      };
 
         transform.position = path[0];

@@ -23,11 +23,9 @@ public class worker1Ophelia : MonoBehaviour
         {//worker starts at the centre point
     centrePoint.position,
      frontPoint.position,
-     centrePoint.position,
+     
      
     leftPoint.position,
-     
-     centrePoint.position,
      
      rightPoint.position,
      

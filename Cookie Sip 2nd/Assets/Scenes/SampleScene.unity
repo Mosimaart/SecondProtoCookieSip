@@ -265,11 +265,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212428613}
-  - component: {fileID: 212428612}
   - component: {fileID: 212428611}
   - component: {fileID: 212428610}
   - component: {fileID: 212428609}
   - component: {fileID: 212428614}
+  - component: {fileID: 212428615}
   m_Layer: 0
   m_Name: Worker 2 Nora
   m_TagString: Untagged
@@ -329,27 +329,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06cc405d4855bb24aa282eb06cc049dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorkerChoice
---- !u!114 &212428612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 212428608}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39d6f4909416a8e43b52aeddf43c29f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::worker2Nora
-  centrePoint: {fileID: 641366967}
-  frontPoint: {fileID: 2130377100}
-  leftPoint: {fileID: 2104105789}
-  closerleftPoint: {fileID: 0}
-  farleftPoint: {fileID: 0}
-  rightPoint: {fileID: 635756261}
-  farrightPoint: {fileID: 0}
-  closerrightPoint: {fileID: 0}
-  moveSpeed: 2
 --- !u!4 &212428613
 Transform:
   m_ObjectHideFlags: 0
@@ -424,6 +403,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &212428615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212428608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39d6f4909416a8e43b52aeddf43c29f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::worker2Nora
+  centrePoint: {fileID: 641366967}
+  frontPoint: {fileID: 2130377100}
+  leftPoint: {fileID: 2104105789}
+  rightPoint: {fileID: 635756261}
+  moveSpeed: 2
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -670,7 +666,7 @@ Transform:
   m_GameObject: {fileID: 635756260}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5, y: -1, z: 0}
+  m_LocalPosition: {x: 7.5, y: -1.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1298,11 +1294,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1886143458}
-  - component: {fileID: 1886143457}
   - component: {fileID: 1886143456}
   - component: {fileID: 1886143455}
   - component: {fileID: 1886143454}
   - component: {fileID: 1886143459}
+  - component: {fileID: 1886143460}
   m_Layer: 0
   m_Name: Worker 3 Quinn
   m_TagString: Untagged
@@ -1362,27 +1358,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06cc405d4855bb24aa282eb06cc049dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WorkerChoice
---- !u!114 &1886143457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1886143453}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a884160d5720cbe45936faa469e9c33b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::worker3Quinn
-  centrePoint: {fileID: 641366967}
-  frontPoint: {fileID: 2130377100}
-  leftPoint: {fileID: 2104105789}
-  closerleftPoint: {fileID: 0}
-  farleftPoint: {fileID: 0}
-  rightPoint: {fileID: 635756261}
-  farrightPoint: {fileID: 0}
-  closerrightPoint: {fileID: 0}
-  moveSpeed: 2
 --- !u!4 &1886143458
 Transform:
   m_ObjectHideFlags: 0
@@ -1457,6 +1432,23 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1886143460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1886143453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a884160d5720cbe45936faa469e9c33b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::worker3Quinn
+  centrePoint: {fileID: 641366967}
+  frontPoint: {fileID: 2130377100}
+  leftPoint: {fileID: 2104105789}
+  rightPoint: {fileID: 635756261}
+  moveSpeed: 2
 --- !u!1 &2104105788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1482,7 +1474,7 @@ Transform:
   m_GameObject: {fileID: 2104105788}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.4, y: -3.49, z: 0}
+  m_LocalPosition: {x: -5.4, y: -2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
