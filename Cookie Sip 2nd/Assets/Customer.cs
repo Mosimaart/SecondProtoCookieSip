@@ -1,14 +1,12 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
 
 public class Customer : MonoBehaviour
 {
+    [SerializeField] private Orderlist orderlist;
     public float moveSpeed = 3f;
-
-    // Queue position (0 = front)
     public int queueIndex;
-
-    // Spacing between customers
     public float spacing = 2.5f;
 
     private bool isLeaving = false;
@@ -26,15 +24,13 @@ public class Customer : MonoBehaviour
 
     void Start()
     {
-        chosenDrink = drinks[Random.Range(0, drinks.Length)];
-        chosenPastry = pastries[Random.Range(0, pastries.Length)];
-
-        string order = chosenDrink + " + " + chosenPastry;
-
-        if (orderText != null)
-        {
-            orderText.text = order;
-        }
+        GenerateOrder();
+        StartCoroutine(OrderLoop());
+    }
+    
+    void ShowOrder()
+    {
+        orderlist.ShowOrder(chosenDrink, chosenPastry);
     }
 
     void Update()
@@ -43,7 +39,6 @@ public class Customer : MonoBehaviour
         {
             MoveInQueue();
 
-            // ONLY front customer orders
             if (queueIndex == 0)
             {
                 waitTimer -= Time.deltaTime;
@@ -62,10 +57,9 @@ public class Customer : MonoBehaviour
         }
         else
         {
-            // Move out of screen
             transform.position = Vector3.MoveTowards(
                 transform.position,
-                new Vector3(8f, 2.1f, 0f),
+                new Vector3(12f, 1.3f, 0f),
                 moveSpeed * Time.deltaTime
             );
         }
@@ -73,9 +67,8 @@ public class Customer : MonoBehaviour
 
     void MoveInQueue()
     {
-        // Dynamically calculate position
         float targetX = 0f - (queueIndex * spacing);
-        Vector3 target = new Vector3(targetX, 2.1f, 0f);
+        Vector3 target = new Vector3(targetX, 1.3f, 0f);
 
         transform.position = Vector3.MoveTowards(
             transform.position,
@@ -96,6 +89,28 @@ public class Customer : MonoBehaviour
             {
                 c.queueIndex--;
             }
+        }
+    }
+
+    void GenerateOrder()
+    {
+        chosenDrink = drinks[Random.Range(0, drinks.Length)];
+        chosenPastry = pastries[Random.Range(0, pastries.Length)];
+
+        string order = chosenDrink + " + " + chosenPastry;
+
+        if (orderText != null)
+        {
+            orderText.text = order;
+        }
+    }
+
+    IEnumerator OrderLoop()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(34f);
+            GenerateOrder();
         }
     }
 }

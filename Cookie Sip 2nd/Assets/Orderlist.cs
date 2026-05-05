@@ -11,7 +11,7 @@ public class Orderlist : MonoBehaviour
 
     [Header("Auto reset")]
     [SerializeField] private bool autoRest = true;
-    [SerializeField] private float autoResetDelay  = 3f;
+    [SerializeField] private float autoResetDelay  = 10f;
     private Coroutine _autoResetCorountine;
 
     [Header("Display positions ( world coordinates)")]
