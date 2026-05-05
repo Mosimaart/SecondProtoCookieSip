@@ -256,37 +256,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 17691249}
   m_CullTransparentMesh: 1
---- !u!1 &155208833
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 155208834}
-  m_Layer: 0
-  m_Name: FarRightPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &155208834
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 155208833}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &212428608
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,11 +344,11 @@ MonoBehaviour:
   centrePoint: {fileID: 641366967}
   frontPoint: {fileID: 2130377100}
   leftPoint: {fileID: 2104105789}
-  closerleftPoint: {fileID: 1635204584}
-  farleftPoint: {fileID: 1992647970}
+  closerleftPoint: {fileID: 0}
+  farleftPoint: {fileID: 0}
   rightPoint: {fileID: 635756261}
-  farrightPoint: {fileID: 155208834}
-  closerrightPoint: {fileID: 2062395658}
+  farrightPoint: {fileID: 0}
+  closerrightPoint: {fileID: 0}
   moveSpeed: 2
 --- !u!4 &212428613
 Transform:
@@ -732,7 +701,7 @@ Transform:
   m_GameObject: {fileID: 641366966}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -1.6, z: 0}
+  m_LocalPosition: {x: 0.4, y: -2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1077,37 +1046,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1635204583
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1635204584}
-  m_Layer: 0
-  m_Name: CloserLeftPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1635204584
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635204583}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.6, y: -0.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1649831138
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,11 +1213,7 @@ MonoBehaviour:
   centrePoint: {fileID: 641366967}
   frontPoint: {fileID: 2130377100}
   leftPoint: {fileID: 2104105789}
-  closerleftPoint: {fileID: 1635204584}
-  farleftPoint: {fileID: 1992647970}
   rightPoint: {fileID: 635756261}
-  farrightPoint: {fileID: 155208834}
-  closerrightPoint: {fileID: 2062395658}
   moveSpeed: 2
 --- !u!4 &1789098267
 Transform:
@@ -1443,11 +1377,11 @@ MonoBehaviour:
   centrePoint: {fileID: 641366967}
   frontPoint: {fileID: 2130377100}
   leftPoint: {fileID: 2104105789}
-  closerleftPoint: {fileID: 1635204584}
-  farleftPoint: {fileID: 1992647970}
+  closerleftPoint: {fileID: 0}
+  farleftPoint: {fileID: 0}
   rightPoint: {fileID: 635756261}
-  farrightPoint: {fileID: 155208834}
-  closerrightPoint: {fileID: 2062395658}
+  farrightPoint: {fileID: 0}
+  closerrightPoint: {fileID: 0}
   moveSpeed: 2
 --- !u!4 &1886143458
 Transform:
@@ -1523,68 +1457,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1992647969
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1992647970}
-  m_Layer: 0
-  m_Name: FarLeftPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1992647970
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992647969}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.34, y: -0.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2062395657
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2062395658}
-  m_Layer: 0
-  m_Name: CloserRightPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2062395658
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062395657}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.3, y: -1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2104105788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,7 +1513,7 @@ Transform:
   m_GameObject: {fileID: 2130377099}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.9, z: 0}
+  m_LocalPosition: {x: 0.4, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1660,10 +1532,6 @@ SceneRoots:
   - {fileID: 641366967}
   - {fileID: 2130377100}
   - {fileID: 2104105789}
-  - {fileID: 1992647970}
-  - {fileID: 1635204584}
   - {fileID: 635756261}
-  - {fileID: 155208834}
-  - {fileID: 2062395658}
   - {fileID: 925896420}
   - {fileID: 1649831141}
